@@ -87,3 +87,8 @@ body {
   border-radius: 50%;
   border-color: rgb(240, 52, 177);
 }
+
+.fa-trash {
+  color: red;
+  font-size: 20px;
+}
