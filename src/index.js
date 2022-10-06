@@ -1,5 +1,5 @@
 import './style.css';
-import { addList, displayList } from './modules/appbuilder.js'
+import { addList, displayList } from './modules/appbuilder.js';
 import localGet from './modules/localstorage';
 
 const addBtn = document.querySelector('.add');

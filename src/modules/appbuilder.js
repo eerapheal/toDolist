@@ -1,4 +1,4 @@
-import template from './obarr.js';
+import Template from './obarr.js';
 import localGet from './localstorage';
 
 const todoListContainer = document.querySelector('.listItem');
@@ -19,7 +19,7 @@ const displayList = () => {
 };
 
 const addList = (description, completed, index) => {
-  const listAdded = new template(description, completed, index);
+  const listAdded = new Template(description, completed, index);
   localGet.push(listAdded);
   localStorage.setItem('listStorage', JSON.stringify(localGet));
   displayList();

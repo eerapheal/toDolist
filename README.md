@@ -3,6 +3,7 @@
 To do list.
 
 # Description of project.
+This To-do list App is built using webpack and served by a webpack dev server
 
 ## Project web demo link. 
 
@@ -20,6 +21,7 @@ To get a local copy up and running follow these simple example steps:
 
 ## Setup 
 Clone this repo with:
+https://github.com/eerapheal/toDolist
 
 cd awesomebook-ES6
 
