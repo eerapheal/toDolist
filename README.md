@@ -1,75 +1,47 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name 
+To do list.
 
-> Description the project.
+# Description of project.
 
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+## Project web demo link. 
 
 
-## Getting Started
+Built With Html. Css. JS.
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Website link: 
 
+# Getting starting 
+To get a local copy up and running follow these simple example steps:
 
-To get a local copy up and running follow these simple example steps.
+## Prerequisites
+ Vscode. 
+ must have git installed.
 
-### Prerequisites
+## Setup 
+Clone this repo with:
 
-### Setup
+cd awesomebook-ES6
 
-### Install
+## Install 
+npm install
 
-### Usage
+Author1 Ekpenisi Erue Raphael.
 
-### Run tests
+GitHub: (https://github.com/eerapheal); 
+Twitter: (https://twitter.com/ekpenisiraphael); 
+LinkedIn: (https://www.linkedin.com/in/ekpenisi-e-raphael-9678a221a/)
 
-### Deployment
+# 🤝 Contributing
+ Contributions, issues, and feature requests are welcome! Feel free to check the [issues page]Fork the Project Create your Feature Branch (git checkout -b 'branchname') Commit your Changes (git commit -m 'Add some branchname') Push to the Branch (git push origin branchname) Open a Pull Request Feel free to check the
 
+ ## Deployment
+  Push changes to a branch. Wait for the build to pass on our CI server. Tell Hubot to deploy it. Verify that the changes work and fix any problems that come up. Merge the branch into master.
 
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
+## Show your support 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## Acknowledgments 
+MICROVERSE and My Team.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+License This project is MIT licensed.
