@@ -55,13 +55,6 @@ body {
   gap: 1em;
 }
 
-.task {
-  width: 65%;
-  height: 80%;
-  border-radius: 5px;
-  font-size: 20px;
-}
-
 .add {
   display: block;
   border: none;
