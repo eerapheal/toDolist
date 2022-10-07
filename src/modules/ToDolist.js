@@ -1,18 +1,18 @@
 class ToDoList {
-    constructor() {
-      this.getTasks();
-    }
-  
-    refreshTasks() {
-      localStorage.setItem('toDoList', JSON.stringify(this.choreArray));
-    }
-  
-    getTasks() {
-      this.choreArray = JSON.parse(localStorage.getItem('toDoList')) || [];
-    }
-  
+  constructor() {
+    this.getTasks();
+  }
+
+  refreshTasks() {
+    localStorage.setItem('toDoList', JSON.stringify(this.choreArray));
+  }
+
+  getTasks() {
+    this.choreArray = JSON.parse(localStorage.getItem('toDoList')) || [];
+  }
+
         showTasks = () => JSON.parse(localStorage.getItem('toDoList')) || [];
-  
+
         setEdit(i) {
           const task = this.choreArray.find(
             (item) => parseInt(item.index, 10) === parseInt(i, 10),
@@ -20,7 +20,7 @@ class ToDoList {
           task.edit = true;
           this.refreshTasks();
         }
-  
+
         addTask(description) {
           const task = {
             description,
@@ -31,7 +31,7 @@ class ToDoList {
           this.choreArray = [...this.choreArray, task];
           this.refreshTasks();
         }
-  
+
         removeTask(index) {
           this.choreArray = this.choreArray.filter((item) => item.index !== index);
           this.choreArray = this.choreArray.map((list, i) => {
@@ -40,7 +40,7 @@ class ToDoList {
           });
           this.refreshTasks();
         }
-  
+
         changeComplete(i) {
           const status = this.choreArray[i - 1].completed;
           this.choreArray[i - 1] = {
@@ -49,13 +49,13 @@ class ToDoList {
           };
           this.refreshTasks();
         }
-  
+
         editTask(index, description) {
           this.choreArray[index - 1].description = description;
           this.choreArray[index - 1].edit = false;
           this.refreshTasks();
         }
-  
+
         clearCompleted() {
           this.choreArray = this.choreArray.filter((item) => item.completed !== true);
           if (this.choreArray.length > 0) {
@@ -66,6 +66,6 @@ class ToDoList {
           }
           this.refreshTasks();
         }
-  }
-  
-  export default ToDoList;
+}
+
+export default ToDoList;
