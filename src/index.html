@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8a3c9493da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>To Do List</title>
 </head>
 <body>
-  <div class=".main-Page">
-    <h1 class="header" Heading = "My To Do List">My To Do List</h1>
+  <div class=".Page main-Page">
+    <h1 class="header tittle" Heading = "My To Do List">My To Do List</h1>
     <div class="toDoList">
-      <div class="entryContainer">
-        <input class="toDoInput" type="text" placeholder="add your to do item here ..." />
-        <button class="addToDo"><i class="fa-solid fa-arrow-turn-down"></i></button>
+      <div class="entryContainer input">
+        <input class="toDoInput task" type="text" placeholder="Task me ...." />
+        <button class="addToDo add"><i class="fa-solid fa-arrow-turn-down"></i></button>
       </div>
       
-      <div class="toDoListItemContainer"></div>
+      <div class="toDoListItemContainer listItem"></div>
       
       
     </div>
-    <button class="clearCompleted">Clear Completed Tasks</button>
+    <button class="clearCompleted Completedbtn">Clear Completed Tasks</button>
   </div>
   <script defer src="index.js"></script>
+
+
+<!-- 
+
+  <div class="main-Page">
+    <h1 class="tittle">To Do List</h1>
+    <div class="toDoList">
+      <div class="input">
+        <input class="task" type="text" placeholder="add to your list" />
+        <button ><i class=" add">add</i></button>
+      </div>
+      
+      <div class="listItem"></div>
+
+      <ul class="ul-items"></ul>
+      
+      
+    </div>
+    <button class="Completedbtn">Clear Completed Tasks</button>
+  </div> -->
   </body>
 </html>
+
