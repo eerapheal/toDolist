@@ -34,7 +34,7 @@ window.removeList = () => {
       localGet.forEach((item, index) => {
         item.index = index + 1;
       });
-      localStorage.setItem('listStorage', JSON.stringify(localGet)).value;
+      // localStorage.setItem('listStorage', JSON.stringify(localGet)).value;
       displayList();
     });
   });
