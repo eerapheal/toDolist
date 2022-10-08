@@ -10,8 +10,8 @@ const displayList = () => {
     += `
       <div class='toDoItem'>
         <input class='item' id='check-${id}',
-         completed)' type='checkbox' value=${item.completed}>
-        <input type='text' class='findInput' id='input-${id}' value=${item.description} />
+         completed)' type='checkbox' value='${item.completed}'>
+        <input type='text' class='findInput' id='input-${id}' value='${item.description}' />
         <i onclick='updateList(${id})' class='fa fas fa-check' id='options-${id}'></i>
         <i onclick='removeList(${id})' class='fas fa-trash' id='delete-${id}'></i>
       </div>
