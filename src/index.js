@@ -1,14 +1,25 @@
-import './style.css';
-import { addList, displayList } from './modules/appbuilder.js';
-import localGet from './modules/localstorage';
+// 
 
-const addBtn = document.querySelector('.add');
-const task = document.querySelector('.task');
+import './style.css';
+import { addList, displayList } from './modules/app.js';
+import clearCompleted from './modules/clearAll.js';
+import localGet from './modules/storage.js';
+
+const addBtn = document.querySelector('.addToDo');
+const todoInput = document.querySelector('.toDoInput');
+
+const clearAll = document.querySelector('.clearCompleted');
 
 window.addEventListener('load', () => {
   displayList();
 });
 
 addBtn.addEventListener('click', () => {
-  addList(task.value, false, localGet.length + 1);
+  addList(todoInput.value, false, localGet.length + 1);
+  displayList();
+});
+
+clearAll.addEventListener('click', () => {
+  clearCompleted();
+  displayList();
 });

@@ -1,2 +1,2 @@
-const localGet = JSON.parse(localStorage.getItem('listStorage')) || [];
-export default localGet;
+// const localGet = JSON.parse(localStorage.getItem('listStorage')) || [];
+// export default localGet;
