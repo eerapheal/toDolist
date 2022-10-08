@@ -61,5 +61,3 @@ window.updateList = (id) => {
 
   localStorage.setItem('listStorage', JSON.stringify(updatedArray));
 };
-
-export { addList, displayList };
