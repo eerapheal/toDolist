@@ -1,4 +1,4 @@
-// 
+//
 
 import './style.css';
 import { addList, displayList } from './modules/app.js';

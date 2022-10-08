@@ -40,7 +40,7 @@ body {
   width: 50vw;
   border-radius: 20%;
   box-shadow: 2px 2px;
-  padding: 85px 0px;
+  padding: 85px 0;
   margin-top: 80px;
 }
 
@@ -107,7 +107,7 @@ body {
   font-size: 20px;
 }
 
-.fa-file-pen  {
+.fa-file-pen {
   color: rgb(28, 4, 83);
   font-size: 20px;
 }
