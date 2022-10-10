@@ -1,52 +1,23 @@
 import './style.css';
+import { addList, displayList } from './modules/app.js';
+import clearCompleted from './modules/clearAll.js';
+import localGet from './modules/storage.js';
 
-const toDoList = [
-  {
-    description: 'dishes',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'study',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Bath',
-    completed: false,
-    index: 3,
-  },
-  {
-    description: 'movies',
-    completed: true,
-    index: 4,
-  },
-];
+const addBtn = document.querySelector('.addToDo');
+const todoInput = document.querySelector('.toDoInput');
 
-toDoList.forEach((e) => {
-  const { description, completed, index } = e;
+const clearAll = document.querySelector('.clearCompleted');
 
-  const ulLists = document.querySelector('.ul-items');
+window.addEventListener('load', () => {
+  displayList();
+});
 
-  const list = document.createElement('li');
-  list.setAttribute('class', 'list');
-  list.setAttribute('id', index);
-  ulLists.appendChild(list);
+addBtn.addEventListener('click', () => {
+  addList(todoInput.value, false, localGet.length + 1);
+  displayList();
+});
 
-  const span = document.createElement('span');
-  span.setAttribute('class', 'list-check');
-  list.appendChild(span);
-
-  const checkbox = document.createElement('input');
-  checkbox.setAttribute('type', 'checkbox');
-  checkbox.checked = completed;
-  span.appendChild(checkbox);
-
-  const paragraph = document.createElement('p');
-  paragraph.textContent = description;
-  span.appendChild(paragraph);
-
-  const ellipsis = document.createElement('i');
-  ellipsis.setAttribute('class', 'fa fa-ellipsis-v');
-  list.appendChild(ellipsis);
+clearAll.addEventListener('click', () => {
+  clearCompleted();
+  displayList();
 });
