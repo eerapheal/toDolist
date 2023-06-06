@@ -40,7 +40,8 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 50vw;
+  min-width: 90vw;
+  min-height: 100vh;
   border-radius: 20%;
   box-shadow: 2px 2px;
   padding: 85px 0;
